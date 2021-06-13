@@ -1,0 +1,14 @@
+---
+title: "About Us"
+description: |
+  We are post-graduate students from the Master of IT in Business (Analytics) programme at Singapore Management University. 
+  
+  Our group consists of 3 members: Lim Jin Ru, Mayurapriyann Arulmozhi Baskaran and Yeo Ding Run Darius.
+  
+  Currently, we are taking the ISSS608 Visual Analytics and Applications course (G1 Group 4) under the supervision of Prof. Kam Tin Seong. This website houses our visual analytics work for our group project in the Visual Analytics and Applications course.
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

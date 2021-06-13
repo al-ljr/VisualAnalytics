@@ -1,0 +1,26 @@
+name: "Visual Analytics"
+title: "Visual Analytics"
+description: |
+  Visual Analytics
+output_dir: "_site"
+navbar:
+  search: true
+  source_url: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+  left:
+    - text: "Vast Challenge 2021"
+      menu:
+        - text: "Project Proposal"
+          href: ProjectProposal.html
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    share: [facebook, twitter, linkedin]
+    citations: false
+output: distill::distill_article

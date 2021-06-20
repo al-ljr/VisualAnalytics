@@ -7,7 +7,7 @@ description: |
 
 author:
   - name: Lim Jin Ru, Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run Darius 
-    affiliation: Master of IT in Business programme, Singapore Management University
+    affiliation: School of Computing and Information Systems, Singapore Management University
 output:
   distill::distill_article:
     toc: true
@@ -44,7 +44,8 @@ As experts in visual analytics, our group are called in to help the law enforcem
 ***
 
 # 2. Dataset Overview
-The group is working on the **[VAST Challenge 2021 Mini-Challenge 1 Dataset](https://www.vast-challenge.github.io/2021/MC1.html)**.
+
+Our team is working on the **[VAST Challenge 2021 Mini-Challenge 1 Dataset](https://www.vast-challenge.github.io/2021/MC1.html)**.
 
 The dataset includes current and historical news reports, resumes of numerous GAStech employees, organization chart and two weeks of email headers to come up with the visualizations among all of these people and organizations. 
 
@@ -66,10 +67,11 @@ R Package | Description
 **[plotly](https://www.cran.r-project.org/web/packages/plotly/index.html)** | ‘plotly’ has an R graphing library which helps in creating interactive, high quality graphs for line plots, scatter plots, area charts, bar charts, error bars, etc.
 **[tidyverse](https://www.cran.r-project.org/web/packages/tidyverse/index.html)** | It includes a variety of related packages for data manipulation and data visualization in R.
 **[ggnetwork](https://www.cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html)** | Network geometries to plot network objects with 'ggplot2', which is necessary for building network graph by ggplot.
-**[visNetwork](https://www.cran.r-project.org/web/packages/visNetwork/index.html)** | visNetwork package allows the building of network visualizations to visualize complex relationships between different elements.
+**[visNetwork](https://www.cran.r-project.org/web/packages/visNetwork/index.html)** | visNetwork package allows the building of network visualizations to visualize complex relationships between different elements. Network visualization is technique used to visualize complex relationships between different elements. The directed and undirected graph structures establish the relationship between entities. Entities are displayed as round nodes and the lines represent the relationship between them.
 
 ***
 
 # 5. Project Schedule
+
 ![](images/ProjectSchedule.PNG)
 

@@ -64,9 +64,9 @@ The application also contains a network plot module (Figure 4) using the visNetw
 
 ## Review on Movement Path Visualization
 
-![Movement Path Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig6.png)
-
 Youssef et al. @youssefetal2019 utilizes the leaflet package to visualize and analyse the movement of the horseshoe crabs. Shiny application is used to give the users the control to look at the chart view and map view of the crab movements. There is also an slider bar present to specify the year range and a dropdown to select the gender (Figure 6).
+
+![Movement Path Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig6.png)
 
 ![Movement Path Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig7.png)
 
@@ -84,6 +84,8 @@ With inspiration from the paper by Kam et al. @kametal2012, ‘DIVAD: A Dynamic 
 
 ## Overview First
 
+The overview step is to have an overview of all employees and their interactions over the entire two weeks (the data available).  Immediately, we see that Matt Bramar, assistant to the CEO sends emails to all employees in the company and his large size represents that he is very influential (Figure 8). The node sizes are a reflection of the nodes’ eigenvector centrality. Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors and a person with few connections could have a very high eigenvector centrality if those few connections were to very well-connected others. Goldbeck @goldbeck2013 postulates its usage in measuring a node’s influence in the network. The same design principle is also applied to the Bipartite Network Analysis plot and the Movement Path Analysis plot where it gives an overview of the credit card transactions relationship with the locations (Figure 9), the movement path of the selected employees (Figure 10) and the email analysis using Scatterplots and Boxplots (Figure 11) respectively based on the selected inputs.
+
 ![Applying Design Principles to Community Detection Network Analysis](images/Fig8.png)
 
 ![Applying Design Principles to Bipartite Network Analysis](images/Fig9.png)
@@ -93,8 +95,6 @@ With inspiration from the paper by Kam et al. @kametal2012, ‘DIVAD: A Dynamic 
 ![Applying Design Principles to Email Analysis](images/Fig11.PNG)
 
 ![Community Detection Network's Employee ID Selected Sorted in Alphabetical Order](images/Fig12.png)
-
-The overview step is to have an overview of all employees and their interactions over the entire two weeks (the data available).  Immediately, we see that Matt Bramar, assistant to the CEO sends emails to all employees in the company and his large size represents that he is very influential (Figure 8). The node sizes are a reflection of the nodes’ eigenvector centrality. Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors and a person with few connections could have a very high eigenvector centrality if those few connections were to very well-connected others. Goldbeck @goldbeck2013 postulates its usage in measuring a node’s influence in the network. The same design principle is also applied to the Bipartite Network Analysis plot and the Movement Path Analysis plot where it gives an overview of the credit card transactions relationship with the locations (Figure 9), the movement path of the selected employees (Figure 10) and the email analysis using Scatterplots and Boxplots (Figure 11) respectively based on the selected inputs.
 
 The employee name can be selected to help the end user focus on certain employee to visualize the relationship and the employee name input has been sorted in alphabetical order (Figure 12).
 
@@ -214,7 +214,7 @@ The vehicle stopping information can be utilized to map the car owner to the cre
 
 In conclusion, the community network detection analysis, scatterplots, boxplots, bipartite network and movement path analysis can work together to identify behaviors, patterns and anomalies in the data through the visualizations. This will help the enforcement officers to visualize any data points that are of interest and warrants further investigation.
 
-The Shiny application developed can also be enhanced in future work to value add to the visualization of the behaviors, patterns and anomalies in the data.The crosstalk package is a very useful package for inter-widgets interactions and has been used for linking the data table with the visFocus filter inputs of “Focus on employee id:”. However, the current community detection network visualization does not have crosstalk integration with VisNetwork’s visOption selection fields yet as visNetwork is not a compatible HTML widget with crosstalk yet. A future improvement would be to integrate cross talk for VisNetwork’s employee ID selection field within the visNetwork graph portion for a more seamless experience when filtering once crosstalk adds visNetwork to its compatible HTML widget list. Another possible improvement in future could be to explore whether the node colors could dynamically change depending on selection of grouping by department or Eigenvector centrality interactively on the Shiny app itself.
+The Shiny application developed can also be enhanced in future work to value add to the visualization of the behaviors, patterns and anomalies in the data.The crosstalk package is a very useful package for inter-widgets interactions and has been used for linking the data table with the visFocus filter inputs of “Focus on employee id:”. However, the current community detection network visualization does not have crosstalk integration with VisNetwork’s visOption selection fields yet as visNetwork is not a compatible HTML widget with crosstalk yet. A future improvement would be to integrate cross talk for VisNetwork’s employee ID selection field within the visNetwork graph portion for a more seamless experience when filtering once crosstalk adds visNetwork to its compatible HTML widget list. Another possible improvement in future could be to explore whether the node colors could dynamically change depending on selection of grouping by department or Eigenvector centrality interactively on the Shiny app itself. The Bipartite Network plot can be further improved in the future to incorporate the centrality measures.
 
 The crosstalk package can also be useful to utilize the linked brushing functionality with the movement path analysis if it supports the compatibility with the tmaps package in the future as it is currently not compatible. The linked brushing is able to filter out the records in the map based on the inputs selected. Linked brushing with cross talk can help reduce the time for analysis and easily get the relationships for further analysis.
 

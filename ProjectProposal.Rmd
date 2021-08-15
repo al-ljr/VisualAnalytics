@@ -68,6 +68,7 @@ R Package | Description
 **[tidyverse](https://www.cran.r-project.org/web/packages/tidyverse/index.html)** | It includes a variety of related packages for data manipulation and data visualization in R.
 **[ggnetwork](https://www.cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html)** | Network geometries to plot network objects with 'ggplot2', which is necessary for building network graph by ggplot.
 **[visNetwork](https://www.cran.r-project.org/web/packages/visNetwork/index.html)** | visNetwork package allows the building of network visualizations to visualize complex relationships between different elements. Network visualization is technique used to visualize complex relationships between different elements. The directed and undirected graph structures establish the relationship between entities. Entities are displayed as round nodes and the lines represent the relationship between them.
+**[igraph](https://cran.r-project.org/web/packages/igraph/index.html)** | igraph package is used for creating, manipulating and analyzing graph that is mainly utilized for network analysis and visualization.
 
 ***
 

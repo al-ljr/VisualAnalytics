@@ -1,0 +1,39 @@
+---
+title: "User Guide"
+description: |
+  This project is based on [VAST Challenge 2021](https://www.vast-challenge.github.io/2021/).
+    
+  The purpose of this project is to be a visual detective by analysing the issues through visual representations.
+
+author:
+  - name: Lim Jin Ru (Alethea), Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run (Darius) 
+    affiliation: School of Computing and Information Systems, Singapore Management University
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    self_contained: false
+---
+
+# User Guide: A Visual Exploration for VAST Challenge 2021 - The Kronos Incident
+
+## 1. Introduction
+
+The Shiny App’s description, overview of the case and brief introduction of the visualizations are included on this page.
+
+## 2. Credit Card Transactions
+
+1)	Select desired date range to visualize the credit card transactions of GAStech employees at their respective locations. The date range has been set to include only the min and max date of the data. The numbers in the red circles represent the last 4 credit card numbers. 
+
+2)	Select the desired time period to filter the visualization by a specific time period. 
+
+3)	Select the desired weight. The weight here represents the minimum number of times that a particular credit card was used at the same location.
+
+4)	The “show data table” option allows user to decide if they want to view or hide the data table. 
+
+5)	Select “Apply Changes” to generate the Bipartite Network Graph for the credit card transactions. 
+
+6)	The navigation buttons allow user to have graph navigation functions, moving the graph in their desired direction for more focus. User can also move the nodes with the connections preserved in this graph for added interactivity. 
+
+7)	The data table is provided for end user to easily refer to the details of the credit card usage and purchase, loyalty number at the respective time and place. The ‘top’ filter under the header row of the data table allows end user to easily filter desired information. 

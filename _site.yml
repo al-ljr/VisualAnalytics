@@ -15,8 +15,10 @@ navbar:
       href: ProjectProposal.html
     - text: "Practice Research Paper"
       href: PracticeResearchPaper.html
-    - text: "Shiny Application & User Guide"
+    - text: "Shiny Application"
       href: ShinyApp.html
+    - text: "User Guide"
+      href: UserGuide.html
     - text: "Project Poster"
       href: ProjectPoster.html
 

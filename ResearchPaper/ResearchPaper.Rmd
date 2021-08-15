@@ -1,5 +1,5 @@
 ---
-title: Short Paper
+title: Practice Research Paper
 author:
   - name: Lim Jin Ru (Alethea)
     email: jinru.lim.2020@mitb.smu.edu.sg

@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Welcome to Group 4's Visual Analytics Project Website
 
+![Image Source: https://vast-challenge.github.io/2021/index.html](images/vastchallenge2021.jpg)
+
 The website documents our group's work to develop an interactive visualizations in the form of a Shiny application for the VAST Challenge 2021 to help visualize patterns and identify anomalies in the data. The framework for the application is done using R and Shiny, with special focus on the visNetwork, Plotly, igraph and tmap packages in R.
 
 The app authors are Alethea Lim (Jin Ru), Darius Yeo (Ding Run) and Mayurapriyann Arulmozhi Baskaran with special credits to Associate Professor Kam Tin Seong for his mentorship and guidance in ISSS608 Visual Analytics and Applications course.

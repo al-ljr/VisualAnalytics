@@ -32,7 +32,7 @@ The Practice Research Paper on VAST Challenge 2021 is edited using R Markdown an
 
 * Design framework - A detail description of the design principles used and data visualization elements built
 
-* Demonstration - Use case
+* Demonstration - Use cases
 
 * Discussion - What has the audience learned from your work? What new insights or practices has your system enabled?
 

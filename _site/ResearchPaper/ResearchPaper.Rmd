@@ -66,7 +66,7 @@ Youssef et al. @youssefetal2019 utilizes the leaflet package to visualize and an
 The movement path analysis in Youssef et al. @youssefetal2019 application utilizing the leaflet package to display the trajectory of crabs from the source location to destination over years. The trajectory of the horseshoe crabs is plotted with red and blue circles denoting the initial and final locations with line connecting them to show the path (Figure 7). Though insightful, it can be improved further by enabling the multiple selections for source location and destination location so that the users can get a wide variety of options to analyze the movement path rather than doing a one-way analysis. The tooltip functionality could have been used effectively to show the year and gender by hovering through the red and blue circles to see if there are any patterns. In addition, the overlap of the points can also be distinguished to an extent by adding transparency the circles denoting source/destination locations.
 
 # Design Framework
-With inspiration from the paper, ‘DIVAD: A Dynamic and Interactive Visual Analytical Dashboard for Exploring and Analyzing Transport Data’ (Kam, 2012) of its applicational use of Schniederman’s Mantra (Schneiderman 1996), an influential organizing principle for the creation of visualization systems, we utilized the same principle for our design:
+With inspiration from the paper by Kam et al. @kametal2012, ‘DIVAD: A Dynamic and Interactive Visual Analytical Dashboard for Exploring and Analyzing Transport Data’ of its applicationa use of Shneiderman’s Mantra @shneiderman1996, an influential organizing principle for the creation of visualization systems, we utilized the same principle for our design:
 
 * 1. Overview First
 
@@ -82,7 +82,7 @@ With inspiration from the paper, ‘DIVAD: A Dynamic and Interactive Visual Anal
 
 ![Community Detection Network's Employee ID Selected Sorted in Alphabetical Order](images/Fig11.png)
 
-The overview step is to have an overview of all employees and their interactions over the entire two weeks (the data available).  Immediately, we see that Matt Bramar, assistant to the CEO sends emails to all employees in the company and his large size represents that he is very influential (Figure 8). The node sizes are a reflection of the nodes’ eigenvector centrality. Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors and a person with few connections could have a very high eigenvector centrality if those few connections were to very well-connected others. It is used to measure a node’s influence in the network (Golbeck, 2013). The same design principle is also applied to the Bipartite Network Analysis plot and the Movement Path Analysis plot where it gives an overview of the credit card transactions relationship with the locations (Figure 9) and the movement path of the selected employees (Figure 10) respectively based on the selected inputs.
+The overview step is to have an overview of all employees and their interactions over the entire two weeks (the data available).  Immediately, we see that Matt Bramar, assistant to the CEO sends emails to all employees in the company and his large size represents that he is very influential (Figure 8). The node sizes are a reflection of the nodes’ eigenvector centrality. Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors and a person with few connections could have a very high eigenvector centrality if those few connections were to very well-connected others. Goldbeck @goldbeck2013 postulates its usage in measuring a node’s influence in the network. The same design principle is also applied to the Bipartite Network Analysis plot and the Movement Path Analysis plot where it gives an overview of the credit card transactions relationship with the locations (Figure 9) and the movement path of the selected employees (Figure 10) respectively based on the selected inputs.
 
 The employee name can be selected to help the end user focus on certain employee to visualize the relationship and the employee name input has been sorted in alphabetical order (Figure 11).
 
@@ -142,6 +142,46 @@ references:
   issued:
     year: 2019
     month: 5
+- id: kametal2012
+  title: "DIVAD: A Dynamic and Interactive Visual Analytical Dashboard for Exploring and Analyzing Transport Data"
+  author:
+  - family: Kam
+    given: Tin Seong
+  - family: Barshikar
+    given: Ketan
+  - family: Tan
+    given: Shaun Jun Hua
+  container-title: International Journal of Computer, Electrical, Automation, Control and Information Engineering
+  volume: 6
+  URL: "https://ink.library.smu.edu.sg/sis_research/1761/"
+  issue: 11
+  publisher: World Academy of Science, Engineering and Technology
+  type: article-journal
+  year: 2012
+  month: 11
+- id: shneiderman1996
+  title: "The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations"
+  author:
+  - family: Shneiderman
+    given: Ben
+  container-title: Proceedings 1996 IEEE Symposium on Visual Languages
+  URL: "https://ieeexplore.ieee.org/document/545307"
+  publisher: IEEE
+  type: article-journal
+  year: 1996
+  month: 9
+- id: goldbeck2013
+  title: "Chapter 3 - Network Structure and Measures"
+  author:
+  - family: Goldbeck
+    given: Jennifer
+  container-title: In Analyzing the Social Web
+  URL: "https://doi.org/10.1016/b978-0-12-405531-5.00003-1"
+  publisher: Elsevier Inc.
+  page: 25-44
+  type: article-journal
+  issued:
+    year: 2013
 - id: meier2012
   title: Professinal Android 4 Application Development
   author: 

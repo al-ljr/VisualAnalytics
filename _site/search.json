@@ -14,7 +14,7 @@
       "description": "Welcome to the ISSS608 G1 Group 4's Visual Analytics Project Website!\n",
       "author": [],
       "contents": "\r\nWelcome to Group 4’s Visual Analytics Project Website\r\nImage Source: https://vast-challenge.github.io/2021/index.htmlThe website documents our group’s work to develop an interactive visualizations in the form of a Shiny application for the VAST Challenge 2021 to help visualize patterns and identify anomalies in the data. The framework for the application is done using R and Shiny, with special focus on the visNetwork, Plotly, igraph and tmap packages in R.\r\nThe authors are Lim Jin Ru (Alethea), Yeo Ding Run (Darius) and Mayurapriyann Arulmozhi Baskaran with special credits to Associate Professor Kam Tin Seong for his mentorship and guidance in ISSS608 Visual Analytics and Applications course.\r\nWith the pressing time urgency in solving crimes, it is necessary to maximize the use of analytics tools to enhance the law enforcers’ abilities to pick up hints and clues in order to speed up their investigation and to close the case. The R packages for data analytics provide an excellent tool for analysts to customize various visualizations according to the business use cases. The R packages share an underlying design philosophy, grammar, and data structures and this strong advantage allows analysts to combine various functionalities of different packages in an integrated manner.\r\nOur Practice Research Paper outlines the motivation behind the application created, the review of past work, design framework, use cases, discussions on new insights and future work. The Shiny Application contains the interactive visualizations for users to access and visualize any patterns, behaviors or anomalies with a detailed User Guide prepared to help get the end users started on using the Shiny application. To get a brief context on our project and application, you may refer to our Project Poster.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-08-15T19:59:30+08:00"
+      "last_modified": "2021-08-15T20:34:58+08:00"
     },
     {
       "path": "PracticeResearchPaper.html",
@@ -27,7 +27,7 @@
         }
       ],
       "contents": "\r\n\r\nContents\r\nPractice Research Paper\r\n\r\nPractice Research Paper\r\nThe Practice Research Paper on VAST Challenge 2021 is edited using R Markdown and the ACM: Association for Computing Machinery template of rticles for R Markdown package and it contains the following:\r\nMotivation of the application\r\nReview and critic on past works\r\nDesign framework - A detail description of the design principles used and data visualization elements built\r\nDemonstration - Use case\r\nDiscussion - What has the audience learned from your work? What new insights or practices has your system enabled?\r\nFuture Work - A description of how your system could be extended or refined.\r\nThe Practice Research Paper can be viewed in pdf format.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-08-15T19:52:17+08:00"
+      "last_modified": "2021-08-15T20:34:29+08:00"
     },
     {
       "path": "ProjectProposal.html",

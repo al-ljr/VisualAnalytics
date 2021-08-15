@@ -83,7 +83,7 @@ knitr::include_graphics("images/r_icons.jpg")
 
 The Plotly interactive scatterplot and box plots also allow us to see patterns easily as crosstalk was activated between these plots. The box plots also help inform us of anomalies. For example, there are outliers in terms of number of emails sent on a Thursday and Wednesday and the investigators can highlight these anomalies to get more information on who sent it and when they sent it. 
 
-```{r boxplot, echo=FALSE, fig.cap="Exploratory Analysis", out.width = '80%', out.extra='style="border: solid; border-width: 4px; border-colour: LightGrey;"'}
+```{r boxplot, echo=FALSE, fig.cap="Exploratory Data Analysis", out.width = '80%', out.extra='style="border: solid; border-width: 4px; border-colour: LightGrey;"'}
 knitr::include_graphics("images/box_plot.jpg")
 ```
 

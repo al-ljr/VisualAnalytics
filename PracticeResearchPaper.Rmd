@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Practice Research Paper
 
-The Practice Research Paper on VAST Challenge 2021 is edited using R Markdown and the ACM: Association for Computing Machinery template of **[rticles for R Markdown](https://www.github.com/rstudio/rticles)** package and it contains the following:
+The Practice Research Paper on VAST Challenge 2021 is edited using R Markdown and ACM: Association for Computing Machinery template of **[rticles for R Markdown](https://www.github.com/rstudio/rticles)** package which contains the following elements:
 
 * Motivation of the application
 

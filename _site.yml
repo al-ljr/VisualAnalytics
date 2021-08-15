@@ -9,8 +9,6 @@ navbar:
   left:
     - text: "Introduction"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Project Proposal"
       href: ProjectProposal.html
     - text: "Practice Research Paper"
@@ -21,6 +19,9 @@ navbar:
       href: UserGuide.html
     - text: "Project Poster"
       href: ProjectPoster.html
+  right:
+    - text: "About"
+      href: about.html
 
 collections:
   posts:

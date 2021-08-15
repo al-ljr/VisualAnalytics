@@ -204,11 +204,11 @@ From the bipartite network visualization, the audience can learn that network pl
 
 ![Discussion – Afternoon Community](images/Fig23.png)
 
-Based on the 10 January 2014 date between 12pm and 2:59pm, we can see that there are numerous communities detected during the lunch timing with Guy’s Gyros being the most popular location as it is transacted by 8 credit cards (Figure 20). Also, we observe that there are some credit cards which are being transacted at more than 1 location during the lunch timing which may suggest that some GAStech employees visit multiple locations during lunch time, for example, credit card 1321 is transacted at both Bean There Done That and Guy’s Gyros during this period.
+Based on the 10 January 2014 date between 12pm and 2:59pm, we can see that there are numerous communities detected during the lunch timing with Guy’s Gyros being the most popular location as it is transacted by 8 credit cards (Figure 23). Also, we observe that there are some credit cards which are being transacted at more than 1 location during the lunch timing which may suggest that some GAStech employees visit multiple locations during lunch time, for example, credit card 1321 is transacted at both Bean There Done That and Guy’s Gyros during this period.
 
 ![Discussion – Odd Timing Community](images/Fig24.png)
 
-Based on the date range of 6 January 2014 to 19 January 2014 between 3am to 5:59am, we can see from the bipartite network plot that there is a community detected at Kronos Mart locations by credit cards 3484 and 8332 (Figure 21) and this reveals the odd timing transactions happening only on these 2 credit cards between 6 January 2014 and 19 January 2014, which could be a red flag for further investigation on the owners of these 2 credit cards.
+Based on the date range of 6 January 2014 to 19 January 2014 between 3am to 5:59am, we can see from the bipartite network plot that there is a community detected at Kronos Mart locations by credit cards 3484 and 8332 (Figure 24) and this reveals the odd timing transactions happening only on these 2 credit cards between 6 January 2014 and 19 January 2014, which could be a red flag for further investigation on the owners of these 2 credit cards.
 
 ![Discussion – Movement Path Analysis](images/Fig25.png)
 

@@ -24,6 +24,6 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Shiny Application & User Guide
 
-To access the interactive visualizations created for VAST Challenge 2021 and visualize any patterns, behaviors or anomalies, please visit the **[Shiny App](https:/al-lim.shinyapps.io/team4_ISSS608_2021/)**.
+To access the interactive visualizations created for VAST Challenge 2021 and visualize any patterns, behaviors or anomalies, please visit the **[Shiny App](https://al-lim.shinyapps.io/team4_ISSS608_2021/)**.
 
 A detailed **[User Guide](UserGuide.html)** is prepared to help get the users started on using the Shiny application.

@@ -1,0 +1,39 @@
+---
+title: "Project Poster"
+description: |
+  This project is based on [VAST Challenge 2021](https://www.vast-challenge.github.io/2021/).
+    
+  The purpose of this project is to be a visual detective by analysing the issues through visual representations.
+
+author:
+  - name: Lim Jin Ru (Alethea), Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run (Darius) 
+    affiliation: School of Computing and Information Systems, Singapore Management University
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+# Project Poster
+
+The Project Poster on VAST Challenge 2021 is designed using R and **[posterdown](https://github.com/brentthorne/posterdown/wiki)** package and it contains the following:
+
+* Issues and Problems
+
+* Motivation
+
+* Approach
+
+* Results
+
+* Future Work
+
+The Project Poster can be viewed in **[html](poster.html)** or **[pdf](PosterDoc/Poster.pdf)** format.

@@ -17,6 +17,29 @@
       "last_modified": "2021-08-15T20:51:14+08:00"
     },
     {
+      "path": "Poster.html",
+      "author": [
+        {
+          "name": "Lim Jin Ru (Alethea)",
+          "url": {}
+        },
+        {
+          "name": "Arulmozhi Baskaran Mayurapriyann",
+          "url": {}
+        },
+        {
+          "name": "Yeo Ding Run (Darius)",
+          "url": {}
+        },
+        {
+          "name": "Mentor: Associate Professor Kam Tin Seong",
+          "url": {}
+        }
+      ],
+      "contents": "\r\n\r\n\r\n\r\nVisual Analytics\r\nIntroduction\r\nAbout\r\nProject Proposal\r\nPractice Research Paper\r\nShiny Application\r\nUser Guide for Shiny Application\r\nProject Poster\r\n\r\n\r\n☰\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nLim Jin Ru (Alethea) 1\r\n\r\n Arulmozhi Baskaran Mayurapriyann 1\r\n\r\n Yeo Ding Run (Darius) 1\r\n\r\n Mentor: Associate Professor Kam Tin Seong 1\r\n\r\n\r\n   \r\n\r\n\r\n\r\n1 Singapore Management University\r\n\r\n\r\n\r\n\r\nIntroduction & Motivation\r\nWith the time urgency in solving crimes, it is necessary to help law enforces visualize patterns and anomalies efficiently to provide them the necessary leads for the case. They also need to be able to interact with the data easily to perform various what-if analysis. The application’s motivation is driven by the discussed user needs as well as to obtain an efficient end-to-end environment of data pre-processing, data visualization creation and analysis. The objective is to provide the law enforcement agencies in Kronos and Tethys with an analytic tool for discovering visual behaviors and patterns of the network relationships in emails, credit card transactions and car movement paths.\r\n\r\n\r\nIssues & Problems\r\nThe following issues and problems were addressed by our project.\r\nStatic visualizations tend to have many overlapping issues.\r\nOur interactive application allows users to filter and zoom in on selected data.\r\n\r\n\r\nBoth static visualizations and many minimally interactive visualizations that had been performed on this case study are not able to draw out hidden patterns. For example, in the network graphs, many visualizations did not make use of the edges and nodes characteristics to represent additional information about the relationships.\r\nTo address the issue, our project combines eigenvector centrality and community detection in the visNetwork graph, introduced bipartite network graph to model matching data between credit card transaction and location and employ tmap on a Raster image to visualize GAStech employees’ vehicle movement across different datetime.\r\n\r\nMost visualizations performed in non open-source platforms does not allow user to replicate the visualization easily.\r\nOur project uses R programming, enabling high reproducibility for users.\r\n\r\n\r\n\r\nApproach\r\n\r\n\r\n\r\nFigure 1: Process Flow\r\n\r\n\r\n\r\nBelow are the tools used for building the application:\r\n\r\n\r\n\r\nFigure 2: Tools\r\n\r\n\r\n\r\n\r\n\r\nExploratory Data Analysis\r\nThe Plotly interactive scatterplot and box plots also allow us to see patterns easily as crosstalk was activated between these plots. The box plots also help inform us of anomalies. For example, there are outliers in terms of number of emails sent on a Thursday and Wednesday and the investigators can highlight these anomalies to get more information on who sent it and when they sent it.\r\n\r\n\r\nFigure 3: Exploratory Analysis\r\n\r\n\r\n\r\n\r\nNetwork Analysis\r\nThe network plot shows the relationship of employees through their email interactions. The arrows represent the direction of the email sent. The email subjects in the data table in the visualization also provide more information about the nature of the interactions. The node sizes are a reflection of the nodes’ eigenvector centrality. Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors and a person with few connections could have a very high eigenvector centrality if those few connections were to very well-connected others. There are many filter functions in the network visualization to enable end user to select the information they need for a focused or general analysis.\r\n\r\n\r\nFigure 4: Network Analysis\r\n\r\n\r\n\r\n\r\nBipartite Network Analysis\r\nThe bipartite network graph is very useful in modeling matching information in a visually informative manner. In our application, We can easily see the card transactions of GAStech employees at various locations at specific date, time and frequency depending on the user’s filtering choice at the sidebar panel. There is also a data table in the visualization to allow user to get further information of transaction price.\r\n\r\n\r\nFigure 5: Bipartite Network Analysis\r\n\r\n\r\n\r\n\r\nGeospatial Analysis\r\nGPS coordinates where the employees tend to stop the vehicles for more than 2 minutes are plotted as bubbles on the map. Transparency threshold is set on the bubbles in order to overcome the overlapping issues due to multiple input selections. Tool tips are also utilized efficiently and effectively to display the information such as department, designation, date, vehicle start time and stop time. Data table containing the credit card details and timestamp of the transactions are displayed below so that the users can infer the owners of the credit cards.\r\n\r\n\r\nFigure 6: Geospatial Analysis\r\n\r\n\r\n\r\n\r\nResults\r\nAll visualizations provide new perspectives in interacting with the data to uncover patterns and anomalies.\r\nWith all visualizations, user can identify possible formal and informal relationships. For instance, informal relationships can be covered through focusing on non-work related emails that are likely a result of personal relationships, after-work vehicle movement to demonstrate movement patterns in their personal time, after work transaction purchases at the same location and time by the GAStech employees could suggest that they might be together at the same location, possibly meeting each other.\r\nWith bipartite network visualization, user can visualize the transaction patterns of GAStech employees and also uncover frequent places that GAStech employees go to at specific date and time.\r\nThe spatial data visualization also allows user to infer the identity of the credit card owners by comparing the data table and their vehicle stopping location shown on the map.\r\nThe network data visualization allows user to infer who are the most influential employees, communities detected through the email interactions to help us uncover relationship in groups that might be otherwise undetected.\r\n\r\n\r\nFuture Work\r\nIn future, we could explore whether the node colors could dynamically change depending on selection of grouping by department or Eigenvector centrality interactively on the Shiny app itself. The Bipartite Network plot can be further improved in the future to incorporate the centrality measures filter.\r\nThe Shiny application can also be refined further to allow users to select various network layouts to see which one helps to better visualize the community relationship in the network. This give users the autonomy and additional interactivity feature by enabling them to explore the network layout to use that can better support their visual analysis.\r\nAt present, cross talk linked brushing functionality is not compatible with tmaps and VisNetwork. In future, we would be able to use linked brushing for tmaps and VisNetwork with data tables or other compatible widgets if crosstalk expands their existing compatible HTML widgets to those widgets.\r\n\r\n\r\n\r\n\r\nA Visual Exploration for VAST Challenge 2021 - The Kronos Incident\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-08-15T21:53:01+08:00"
+    },
+    {
       "path": "PracticeResearchPaper.html",
       "title": "Practice Research Paper",
       "description": "This project is based on [VAST Challenge 2021](https://www.vast-challenge.github.io/2021/).\n  \nThe purpose of this project is to be a visual detective by analysing the issues through visual representations.\n",
@@ -27,7 +50,20 @@
         }
       ],
       "contents": "\r\n\r\nContents\r\nPractice Research Paper\r\n\r\nPractice Research Paper\r\nThe Practice Research Paper on VAST Challenge 2021 is edited using R Markdown and the ACM: Association for Computing Machinery template of rticles for R Markdown package and it contains the following:\r\nMotivation of the application\r\nReview and critic on past works\r\nDesign framework - A detail description of the design principles used and data visualization elements built\r\nDemonstration - Use case\r\nDiscussion - What has the audience learned from your work? What new insights or practices has your system enabled?\r\nFuture Work - A description of how your system could be extended or refined.\r\nThe Practice Research Paper can be viewed in pdf format.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-08-15T20:51:05+08:00"
+      "last_modified": "2021-08-15T21:12:20+08:00"
+    },
+    {
+      "path": "ProjectPoster.html",
+      "title": "Project Poster",
+      "description": "This project is based on [VAST Challenge 2021](https://www.vast-challenge.github.io/2021/).\n  \nThe purpose of this project is to be a visual detective by analysing the issues through visual representations.\n",
+      "author": [
+        {
+          "name": "Lim Jin Ru (Alethea), Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run (Darius)",
+          "url": {}
+        }
+      ],
+      "contents": "\r\n\r\nContents\r\nProject Poster\r\n\r\nProject Poster\r\nThe Project Poster on VAST Challenge 2021 is designed using R and posterdown package and it contains the following:\r\nIssues and Problems\r\nMotivation\r\nApproach\r\nResults\r\nFuture Work\r\nThe Project Poster can be viewed in html or pdf format.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-08-15T21:53:17+08:00"
     },
     {
       "path": "ProjectProposal.html",

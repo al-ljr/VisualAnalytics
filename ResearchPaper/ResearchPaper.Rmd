@@ -38,7 +38,7 @@ Our research and development efforts for this Shiny application were motivated b
 
 # Review and Critic on Past Work
 
-## Review on Community Detection Network Visualization
+## Review on Network Visualization
 
 There have been some existing network visualizations using R performed with the same GAStech employees’ email dataset but there are still room for improvement especially in utilizing or integrating more functionalities of R packages.
 
@@ -62,15 +62,15 @@ A research paper by Seal & Wild @sealwild2018 looked at the visualization of net
 
 The application also contains a network plot module (Figure 4) using the visNetwork package. The true interactions are denoted by the bold lines while the predicted interactions are displayed in dashed lines with drop down lists provided to select specific nodes and groups. Although this network plot is useful to show the network, the layout of the network visualization could be further improved to better show the bipartite relationship of the data using the bipartite network layout since the dataset used is a two-projected (bipartite) network of drugs and proteins. In view of this problem, we research to explore alternative visualization methods to analyze the bipartite network data in our credit card transactions dataset which contains the credit card numbers and the locations. A good visualization method will be using the bipartite-specific layout of the igraph package (Figure 5) to better visualize and represent the network that makes it easier to understand and incorporating features to draw interest.
 
-## Review on Movement Path Visualization
+## Review on Geospatial Visualization
 
 Youssef et al. @youssefetal2019 utilizes the leaflet package to visualize and analyse the movement of the horseshoe crabs. Shiny application is used to give the users the control to look at the chart view and map view of the crab movements. There is also an slider bar present to specify the year range and a dropdown to select the gender (Figure 6).
 
-![Movement Path Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig6.png)
+![Geospatial Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig6.png)
 
-![Movement Path Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig7.png)
+![Geospatial Analysis' Shiny App from Youssef et al. (2019) @youssefetal2019](images/Fig7.png)
 
-The movement path analysis in Youssef et al. @youssefetal2019 application utilizes the leaflet package to display the trajectory of crabs from the source location to destination over years. The trajectory of the horseshoe crabs is plotted with red and blue circles denoting the initial and final locations with line connecting them to show the path (Figure 7). Though insightful, it can be improved further by enabling the multiple selections for source location and destination location so that the users can get a wide variety of options to analyze the movement path rather than doing a one-way analysis. The tooltip functionality could have been used effectively to show the year and gender by hovering through the red and blue circles to see if there are any patterns. In addition, the overlap of the points can also be distinguished to an extent by adding transparency the circles denoting source/destination locations.
+The geospatial analysis on movement path in Youssef et al. @youssefetal2019 application utilizes the leaflet package to display the trajectory of crabs from the source location to destination over years. The trajectory of the horseshoe crabs is plotted with red and blue circles denoting the initial and final locations with line connecting them to show the path (Figure 7). Though insightful, it can be improved further by enabling the multiple selections for source location and destination location so that the users can get a wide variety of options to analyze the movement path rather than doing a one-way analysis. The tooltip functionality could have been used effectively to show the year and gender by hovering through the red and blue circles to see if there are any patterns. In addition, the overlap of the points can also be distinguished to an extent by adding transparency the circles denoting source/destination locations.
 
 # Design Framework
 
@@ -94,7 +94,7 @@ The overview step is to have an overview of all employees and their interactions
 
 ![Applying Design Principles to Email Analysis](images/Fig11.PNG)
 
-![Community Detection Network's Employee ID Selected Sorted in Alphabetical Order](images/Fig12.png)
+![Network Analysis' Employee ID Selected Sorted in Alphabetical Order](images/Fig12.png)
 
 The employee name can be selected to help the end user focus on certain employee to visualize the relationship and the employee name input has been sorted in alphabetical order (Figure 12).
 
@@ -110,13 +110,21 @@ The next step is to zoom and filter the necessary data that we are interested to
 
 This community detection network graph also differentiates itself from the other versions mentioned earlier by integrating both community detection and eigenvector centrality in the same graph to allow investigators to use these important information to better see relationships (Figure 15). The arrows are also weighted by number of emails with thicker arrows representing more emails exchanged between the nodes. For the community detection, the cluster_label_prop function, a fast algorithm for detecting community structure in networks was used. As described in ‘igraph’’s R documentation, it works by labeling the vertices with unique labels and then updating the labels by majority voting in the neighborhood of the vertex.
 
-![Sample of Community 5 in Community Network Detection Analysis](images/Fig16.png)
+![Sample of Community 5 in Network Analysis](images/Fig16.png)
 
 The desired community group can be easily selected and visualized through the drop-down list selection. This helps us find cluster relationships that would otherwise have been difficult to detect just by reading email header records. In the sample example (Figure 16), we see that community group 5 consists of 4 individuals and all of them are approximately the same size, signaling that the 4 of them have approximately equal influence in the company.
 
 ## Details on Demand
 
 The third step is details on demand. There are many filter functions in the network visualization to enable end user to select the information they need for focused or general analysis.
+
+### Exploratory Data Analysis on Emails using Scatterplots and Boxplots
+
+The following details on demand design princicples are incorporated in the Scatterplots and Boxplots of the Email Analysis:
+
+*	Incorporate the filters in the Shiny application allow end users to select the email subject of interest to visualize any email anomalies.
+
+*	Colors in the used in the scatterplots and boxplots differentiates the type of scatterplots and boxplots as there are 2 scatterplots (To investigate the emails by time, and to investigate the emails by sender) and 2 boxplots (To investigate the emails by day of week, and to investigate the emails by date).
 
 ###	Community Detection Network Analysis and Bipartite Network Analysis
 
@@ -129,14 +137,6 @@ The follow details on demand design principles are incorporated in the Community
 *	Sizes and colors in the community detection network plot highlight the different nodes of the employees and the community it belongs to. The larger size nodes correspond to more emails exchanged by the employee while each community are assigned a unique color.
 
 *	Data table to help drill down on specific details in the data that the user wishes to explore further that supplement the community detection network plot and bipartite network plot
-
-### Email Analysis Using Scatterplots and Boxplots
-
-The following details on demand design princicples are incorporated in the Scatterplots and Boxplots of the Email Analysis:
-
-*	Incorporate the filters in the Shiny application allow end users to select the email subject of interest to visualize any email anomalies.
-
-*	Colors in the used in the scatterplots and boxplots differentiates the type of scatterplots and boxplots as there are 2 scatterplots (To investigate the emails by time, and to investigate the emails by sender) and 2 boxplots (To investigate the emails by day of week, and to investigate the emails by date).
 
 ### Movement Path Analysis
 
@@ -160,17 +160,17 @@ The follow details on demand design principles are incorporated in the Movement 
 
 # Demonstration - Use Cases
 
-## Community Detection Network Analysis
+## Exploratory Data Analysis on Emails using Scatterplots and Boxplots
 
-![Use Case for Community Detection Network Analysis](images/Fig17.png)
+![Use Case for Exploratory Data Analysis on Emails](images/Fig17.png)
 
-With reference to Figure 17, based on the date range of 14 January 2014 to 17 January 2014, non-work related emails sent during work hours by Isia Vann, we can see that the network plot shows the correspondence relationship is with Rachel Pantanal and it is a two-way conversation as shown by the arrows. We can also see the email subjects that reveals more information about the correspondences that they are having.  Both of them, despite belonging to different departments, have also been picked up by the algorithm that they belonged to the same community and hence are both displaying green nodes. Rachel’s node size is significantly bigger than Isia, signifying that Rachel has much higher influence in the company than Isia.
+In Figure 17, we use scatterplots and boxplots to analysis the email volume sent by the GAStech employees by filtering the email subject of work-related and non-work related. Using scatterplots and boxplots helps the end users visualize and identify outliers which can warrant further investigation into that particular parameters (e.g. time, day of the week, date or employee). Also, some employees may be collaborating through the use of emails to facilitate the kidnapping, thus the outliers can help to spot these anomalies and allow for a deeper investigation in these areas.
 
-## Email Analysis Using Scatterplots and Boxplots
+## Network Analysis
 
-![Use Case for Email Analysis](images/Fig18.png)
+![Use Case for Network Analysis](images/Fig18.png)
 
-In Figure 18, we use scatterplots and boxplots to analysis the email volume sent by the GAStech employees by filtering the email subject of work-related and non-work related. Using scatterplots and boxplots helps the end users visualize and identify outliers which can warrant further investigation into that particular parameters (e.g. time, day of the week, date or employee). Also, some employees may be collaborating through the use of emails to facilitate the kidnapping, thus the outliers can help to spot these anomalies and allow for a deeper investigation in these areas.
+With reference to Figure 18, the use of network analysis is for community detection. Based on the date range of 14 January 2014 to 17 January 2014, non-work related emails sent during work hours by Isia Vann, we can see that the network plot shows the correspondence relationship is with Rachel Pantanal and it is a two-way conversation as shown by the arrows. We can also see the email subjects that reveals more information about the correspondences that they are having.  Both of them, despite belonging to different departments, have also been picked up by the algorithm that they belonged to the same community and hence are both displaying green nodes. Rachel’s node size is significantly bigger than Isia, signifying that Rachel has much higher influence in the company than Isia.
 
 ## Bipartite Network Analysis
 
@@ -178,7 +178,7 @@ In Figure 18, we use scatterplots and boxplots to analysis the email volume sent
 
 Based on the date range of 6 January 2014 to 19 January 2014 at the 6am to 8:59am time period (Figure 19), we can see that the bipartite network plot shows that there is community detected at Brew’ve Been Served, Coffee Cameleon and Hallowed Grounds locations by 10, 2 and 3 credit cards respectively which suggest that these 3 locations are popular during the breakfast hours. The bipartite network analysis also help the users to detect communities on different dates and time of the day that will assist their investigation.
 
-## Movement Path Analysis
+## Geospatial Analysis
 
 ![Use Case for Movement Path Analysis](images/Fig20.png)
 
@@ -206,7 +206,7 @@ Based on the 10 January 2014 date between 12pm and 2:59pm, we can see that there
 
 Based on the date range of 6 January 2014 to 19 January 2014 between 3am to 5:59am, we can see from the bipartite network plot that there is a community detected at Kronos Mart locations by credit cards 3484 and 8332 (Figure 24) and this reveals the odd timing transactions happening only on these 2 credit cards between 6 January 2014 and 19 January 2014, which could be a red flag for further investigation on the owners of these 2 credit cards.
 
-![Discussion – Movement Path Analysis](images/Fig25.png)
+![Discussion – Geospatial Analysis](images/Fig25.png)
 
 The vehicle stopping information can be utilized to map the car owner to the credit card car number. In Figure 25, the bubble in the figure shows the locations where the employee, Nils Calixto has stopped his car on 6 January 2014. Upon clicking the bubble located at Albert’s Fine Clothing opens the tooltip with the vehicle stop and start time. We can filter the data table present beneath the map by location and day to find transactions that had taken place at Albert’s Fine Clothing on 6 January 2014. The search result lists two transactions and one of which falls between the start time and stop time of Nils Calixto. Hence, it can be inferred that the card owner for credit card number ending with 9551 is Nils Calixto. The vehicle stopping locations of the same employee can be filtered for consecutive days and compared with that of the transaction details in the data table in case of multiple credit card transactions within the vehicle stopping time interval.
 
@@ -214,7 +214,7 @@ The vehicle stopping information can be utilized to map the car owner to the cre
 
 In conclusion, the community network detection analysis, scatterplots, boxplots, bipartite network and movement path analysis can work together to identify behaviors, patterns and anomalies in the data through the visualizations. This will help the enforcement officers to visualize any data points that are of interest and warrants further investigation.
 
-The Shiny application developed can also be enhanced in future work to value add to the visualization of the behaviors, patterns and anomalies in the data.The crosstalk package is a very useful package for inter-widgets interactions and has been used for linking the data table with the visFocus filter inputs of “Focus on employee id:”. However, the current community detection network visualization does not have crosstalk integration with VisNetwork’s visOption selection fields yet as visNetwork is not a compatible HTML widget with crosstalk yet. A future improvement would be to integrate cross talk for VisNetwork’s employee ID selection field within the visNetwork graph portion for a more seamless experience when filtering once crosstalk adds visNetwork to its compatible HTML widget list. Another possible improvement in future could be to explore whether the node colors could dynamically change depending on selection of grouping by department or Eigenvector centrality interactively on the Shiny app itself. The Bipartite Network plot can be further improved in the future to incorporate the centrality measures.
+The Shiny application developed can also be enhanced in future work to value add to the visualization of the behaviors, patterns and anomalies in the data.The crosstalk package is a very useful package for inter-widgets interactions and has been used for linking the data table with the visFocus filter inputs of “Focus on employee id:”. However, the current community detection network visualization does not have crosstalk integration with VisNetwork’s visOption selection fields yet as visNetwork is not a compatible HTML widget with crosstalk yet. A future improvement would be to integrate cross talk for VisNetwork’s employee ID selection field within the visNetwork graph portion for a more seamless experience when filtering once crosstalk adds visNetwork to its compatible HTML widget list. Another possible improvement in future could be to explore whether the node colors could dynamically change depending on selection of grouping by department or Eigenvector centrality interactively on the Shiny app itself. The Bipartite Network plot can be further improved in the future to incorporate the centrality measures filter.
 
 The crosstalk package can also be useful to utilize the linked brushing functionality with the movement path analysis if it supports the compatibility with the tmaps package in the future as it is currently not compatible. The linked brushing is able to filter out the records in the map based on the inputs selected. Linked brushing with cross talk can help reduce the time for analysis and easily get the relationships for further analysis.
 

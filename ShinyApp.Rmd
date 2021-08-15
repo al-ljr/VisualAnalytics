@@ -26,4 +26,4 @@ knitr::opts_chunk$set(echo = FALSE,
 
 To access the interactive visualizations created for VAST Challenge 2021 and visualize any patterns, behaviors or anomalies, please visit the **[Shiny App](https:/al-lim.shinyapps.io/team4_ISSS608_2021/)**.
 
-An detailed **[User Guide](UserGuide/UserGuide.pdf)** is prepared to help get the end users started on using the Shiny application.
+An detailed **[User Guide](UserGuide.html)** is prepared to help get the end users started on using the Shiny application.

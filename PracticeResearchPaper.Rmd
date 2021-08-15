@@ -28,7 +28,7 @@ The Practice Research Paper on VAST Challenge 2021 is edited using R Markdown an
 
 * Motivation of the application
 
-* Review and critic on past works
+* Review and critic on past work
 
 * Design framework - A detail description of the design principles used and data visualization elements built
 

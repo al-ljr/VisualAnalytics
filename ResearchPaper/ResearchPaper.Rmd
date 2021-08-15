@@ -22,10 +22,6 @@ csl: acm-sig-proceedings.csl
 output: rticles::acm_article
 ---
 
-```{r, out.width="40%", fig.align="center"}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 # Introduction 
 
 With the pressing time urgency in solving crimes, it is necessary to maximize the use of analytics tools to enhance the law enforcers’ abilities to pick up hints and clues in order to speed up their investigation and to close the case. The R packages for data analytics provide an excellent tool for analysts to customize various visualizations according to the business use cases. The R packages share an underlying design philosophy, grammar, and data structures and this strong advantage allows analysts to combine various functionalities of different packages in an integrated manner.

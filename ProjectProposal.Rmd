@@ -45,9 +45,11 @@ As experts in visual analytics, our group are called in to help the law enforcem
 
 # 2. Dataset Overview
 
-Our team is working on the **[VAST Challenge 2021 Mini-Challenge 1 Dataset](https://www.vast-challenge.github.io/2021/MC1.html)**.
+Our team is working on the **[VAST Challenge 2021 Mini-Challenge 1 Dataset](https://www.vast-challenge.github.io/2021/MC1.html)** and **[VAST Challenge 2021 Mini-Challenge 2 Dataset](https://www.vast-challenge.github.io/2021/MC2.html)**.
 
-The dataset includes current and historical news reports, resumes of numerous GAStech employees, organization chart and two weeks of email headers to come up with the visualizations among all of these people and organizations. 
+VAST Challenge 2021 Mini-Challenge 1 dataset includes current and historical news reports, resumes of numerous GAStech employees, organization chart and two weeks of email headers to come up with the visualizations among all of these people and organizations.
+
+VAST Challenge 2021 Mini-Challenge 2 dataset includes data on credit card transactions, loyalty card membership transactions, GAStech employees' vehicle GPS movements, and GAStech vehicle assignment.
 
 ***
 

@@ -1,0 +1,41 @@
+---
+title: "Practice Research Paper"
+description: |
+  This project is based on [VAST Challenge 2021](https://www.vast-challenge.github.io/2021/).
+    
+  The purpose of this project is to be a visual detective by analysing the issues through visual representations.
+
+author:
+  - name: Lim Jin Ru (Alethea), Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run (Darius) 
+    affiliation: School of Computing and Information Systems, Singapore Management University
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+# Practice Research Paper
+
+The Practice Research Paper on VAST Challenge 2021 is edited using R Markdown and the ACM: Association for Computing Machinery template of **[rticles for R Markdown](https://www.github.com/rstudio/rticles)** package and it contains the following:
+
+* Motivation of the application
+
+* Review and critic on past works
+
+* Design framework - A detail description of the design principles used and data visualization elements built
+
+* Demonstration - Use case
+
+* Discussion - What has the audience learned from your work? What new insights or practices has your system enabled?
+
+* Future Work - A description of how your system could be extended or refined.
+
+The Practice Research Paper can be viewed in **[pdf](ResearchPaper/ResearchPaper.pdf)** format.

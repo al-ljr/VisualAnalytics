@@ -14,14 +14,12 @@ navbar:
     - text: "Project Proposal"
       href: ProjectProposal.html
     - text: "Practice Research Paper"
-      href: ResearchPaper.html
-    - text: "Shiny Application"
+      href: PracticeResearchPaper.html
+    - text: "Shiny Application & User Guide"
       href: ShinyApp.html
     - text: "Project Poster"
       href: ProjectPoster.html
-    - text: "User Guide on Shiny Application"
-      href: UserGuide.html
-      
+
 collections:
   posts:
     categories: true

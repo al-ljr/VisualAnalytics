@@ -6,7 +6,7 @@ description: |
   The purpose of this project is to be a visual detective by analysing the issues through visual representations.
 
 author:
-  - name: Lim Jin Ru, Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run Darius 
+  - name: Lim Jin Ru (Alethea), Mayurapriyann Arulmozhi Baskaran, Yeo Ding Run (Darius) 
     affiliation: School of Computing and Information Systems, Singapore Management University
 output:
   distill::distill_article:
